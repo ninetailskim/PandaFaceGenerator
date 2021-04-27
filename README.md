@@ -1,5 +1,5 @@
 # 参赛作品名
-熊猫头表情生辰器
+熊猫头表情生成器
 ## 作品简介
 使用Wechaty+Paddlehub制作的表情包机器人，只要给它发送照片和视频，它就会提取你的人脸来制作你专属的熊猫头表情，还可以定制文字，玩起来吧~
 [aistudio](https://aistudio.baidu.com/aistudio/projectdetail/1869462)
