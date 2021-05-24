@@ -1,14 +1,13 @@
 # 参赛作品名
-熊猫头表情生辰器
+熊猫头表情生成器
 ## 作品简介
 使用Wechaty+Paddlehub制作的表情包机器人，只要给它发送照片和视频，它就会提取你的人脸来制作你专属的熊猫头表情，还可以定制文字，玩起来吧~
 [aistudio](https://aistudio.baidu.com/aistudio/projectdetail/1869462)
 [B站视频](https://www.bilibili.com/video/BV1NK4y1N7m5/)
 ## 使用方式
-JS端：
-set WECHATY_LOG=verbose
-set WECHATY_PUPPET=wechaty-puppet-wechat
-
+JS端：   
+set WECHATY_LOG=verbose   
+set WECHATY_PUPPET=wechaty-puppet-wechat   
 npx ts-node examples\\advanced\\Panda-Face-bot.js
 
 
@@ -31,8 +30,8 @@ python manage.py runserver 0.0.0.0:8080
 #### 有了这个机器人就可以非常方便的制作想要的表情包了,怼人的能力笋尖爆炸~
 
 > 具体方案分享（思路框架图、思路步骤详述、模型应用+调优过程、部分代码展示）   
-#### 框架图
-![](https://ai-studio-static-online.cdn.bcebos.com/05d27434542e4bf29a80d451a4c993c972c8ab6a5e6948438fc5c7b287bf90ab)
+#### 框架图   
+![](https://ai-studio-static-online.cdn.bcebos.com/05d27434542e4bf29a80d451a4c993c972c8ab6a5e6948438fc5c7b287bf90ab)   
 #### 因为python版本的Wechaty我真的搞不定，所以不得已使用这种方式：使用接口简单的js版本的Wechaty，然后使用Django启动一个服务器，在Wechaty端接收到文字/图片/视频时，会向django端发送一个get请求，django端调用Paddlehub，完成人脸信息处理，进行response给Wechaty端。   
 #### Wechaty端,我直接魔改的官方的advance例子中的media-file-bot.js文件,增加了两个模块:    
 #### 1.保存文字的模块,要针对不同的信息发出者,保存其对应的文字,结果保存在一个sender.json文件中    

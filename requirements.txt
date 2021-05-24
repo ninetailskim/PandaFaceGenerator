@@ -1,6 +1,4 @@
 paddlepaddle
 paddlehub
-visualdl
-paddleseg
-paddlenlp
-paddleocr
+django
+opencv
