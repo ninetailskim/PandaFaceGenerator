@@ -9,7 +9,7 @@ JS端：
 set WECHATY_LOG=verbose
 set WECHATY_PUPPET=wechaty-puppet-wechat
 
-npx ts-node examples\\advanced\\media-file-bot.js
+npx ts-node examples\\advanced\\Panda-Face-bot.js
 
 
 Django端
